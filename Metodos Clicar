@@ -1,0 +1,21 @@
+# Entrar-como-usu-rio-e-cadastrar
+Realizando cadastro e logando como usuário para cadastrar e excluir funcionário.
+
+
+//Metodos clicar herdando herança de browser para não ocorrer Nulexception
+
+public class Metodos extends Browsers {
+
+	public void clicar(By elemento) {
+		try {
+			driver.findElement(elemento).click();
+
+		} catch (Exception e) {
+			System.err.println("-----erro ao clicar------" + e.getMessage());
+			System.err.println("-----causa do erro------" + e.getMessage());
+		}
+    
+	}
+  
+}
+
