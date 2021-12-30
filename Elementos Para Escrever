@@ -1,0 +1,119 @@
+# Entrar-como-usu-rio-e-cadastrar
+Realizando cadastro e logando como usuário para cadastrar e excluir funcionário.
+
+
+//Elementos capturados para realizar escrita de texto nos elementos inspecionados
+
+public class Elementos {
+
+	WebDriver driver;
+
+	private By User = By.name("username");
+
+	public By getUser() {
+		return User;
+	}
+
+	private By Senha = By.name("pass");
+
+	public By getSenha() {
+		return Senha;
+	}
+
+	private By Newfun = By.xpath("/html/body/nav/div/div/ul/li[2]/a");
+
+	public By getNewfun() {
+		return Newfun;
+	}
+
+	private By Nomefun = By.name("nome");
+
+	public By Nomefun() {
+		return Nomefun;
+	}
+
+	private By Funcpf = By.id("cpf");
+
+	public By Funcpf() {
+		return Funcpf;
+	}
+
+	private By Sexo = By.name("sexo");
+
+	public By getSexo() {
+		return Sexo;
+	}
+
+	private By Admss = By.name("admissao");
+
+	public By getAdmss() {
+		return Admss;
+	}
+
+	private By Cargo = By.name("cargo");
+
+	public By getCargo() {
+		return Cargo;
+	}
+
+	private By Salario = By.name("salario");
+
+	public By getSalario() {
+		return Salario;
+
+	}
+
+	private By tpDeContratacao = By.name("tipo-contratacao");
+
+	public By getTpDeContratacao() {
+		return tpDeContratacao;
+	}
+
+	private By Enviar = By.xpath("/html/body/div/div[2]/div/form/div[3]/input");
+
+	public By getEnviar() {
+		return Enviar;
+	
+  }
+
+	
+	public void usuario(String texto, By elemento) {
+
+		driver.findElement(elemento).sendKeys(texto);
+	}
+
+	public void senha(String texto, By elemento) {
+
+		driver.findElement(elemento).sendKeys(texto);
+	}
+	public void nome(String texto, By elemento) {
+		
+		driver.findElement(elemento).sendKeys(texto);
+        
+	}public void cpf(String texto, By elemento) {
+		
+		driver.findElement(elemento).sendKeys(texto);
+        
+	}public void sexo(String texto, By elemento) {
+		
+		driver.findElement(elemento).sendKeys(texto);
+        
+	}public void admissao(String texto, By elemento) {
+		
+		driver.findElement(elemento).sendKeys(texto);
+        
+	}public void cargo(String texto, By elemento) {
+		
+		driver.findElement(elemento).sendKeys(texto);
+        
+	}public void salario(String texto, By elemento) {
+		
+		driver.findElement(elemento).sendKeys(texto);
+        
+	}public void tpDeContratacao(String texto, By elemento) {
+		
+		driver.findElement(elemento).sendKeys(texto);
+        
+	}
+
+}
