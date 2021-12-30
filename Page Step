@@ -1,0 +1,109 @@
+# Entrar-como-usu-rio-e-cadastrar
+Realizando cadastro e logando como usuário para cadastrar e excluir funcionário.
+
+public class ExemploTeste {
+
+//Ponteiros para poder realizar os comandos criados na Page, Browser e Elementos, para poder se comunicar com meu WebDriver selenium executar os comandos web..
+
+	Browsers browsers = new Browsers();
+	HomePage home = new HomePage();
+	Elementos elem = new Elementos();
+
+	@Given("que eu entre no site {string}")
+	public void que_eu_entre_no_site(String site) {
+
+		browsers.abrirNavegador(site);
+
+	}
+
+	@Then("realizo o login como usuario")
+	public void realizo_o_login_como_usuario() {
+
+		home.menu("Usuario");
+		elem.usuario("IgorRoberth", elem.getUser());
+
+	}
+
+	@Then("digito a senha")
+	public void digito_a_senha() {
+
+		home.menu("Senha");
+		elem.senha("igr@3605", elem.getSenha());
+	}
+
+	@Then("clico em entrar")
+	public void clico_em_entrar() {
+
+		home.menu("Entre");
+
+	}
+
+	@When("clico em novo funcionario")
+	public void clico_em_novo_funcionario() {
+
+		home.menu("Novo Funcionario");
+
+	}
+
+	@When("cadastro nome do funcionario")
+	public void cadastro_nome_do_funcionario() {
+
+		home.menu("Nome");
+		elem.nome("Roberto Moura", elem.Nomefun());
+
+	}
+
+	@When("cadastro o cpf")
+	public void cadastro_o_cpf() {
+
+		home.menu("CPF");
+		elem.cpf("587.044.190-06", elem.Funcpf());
+
+	}
+
+	@When("cadastro o sexo")
+	public void cadastro_o_sexo() {
+
+		home.menu("Sexo");
+		elem.sexo("M", elem.getSexo());
+
+	}
+
+	@When("cadastro data da admissao")
+	public void cadastro_data_da_admissao() {
+
+		home.menu("Admissao");
+		elem.admissao("23/04/2019", elem.getAdmss());
+	}
+
+	@When("cadastro o cargo")
+	public void cadastro_o_cargo() {
+
+		home.menu("Cargo");
+		elem.cargo("Analista de Teste QA", elem.getCargo());
+
+	}
+
+	@When("cadastro o salario")
+	public void cadastro_o_salario() {
+
+		home.menu("salario");
+		elem.salario("1000000", elem.getSalario());
+
+	}
+
+	@When("registro o modo de contratacao")
+	public void registro_o_modo_de_contratacao() {
+
+		home.menu("CLT");
+
+	}
+
+	@When("clico em enviar")
+	public void clico_em_enviar() {
+
+		home.menu("Enviar");
+
+  }
+  
+}
