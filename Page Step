@@ -3,7 +3,7 @@ Realizando cadastro e logando como usuário para cadastrar e excluir funcionári
 
 public class ExemploTeste {
 
-//Ponteiros para poder realizar os comandos criados na Page, Browser e Elementos, para poder se comunicar com meu WebDriver selenium executar os comandos web..
+//Page Gerkins para realizar os comando no meu WebDriver junto dos elementos e  meotodos  que estão nas outras pages
 
 	Browsers browsers = new Browsers();
 	HomePage home = new HomePage();
