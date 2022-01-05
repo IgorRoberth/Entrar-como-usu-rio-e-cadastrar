@@ -20,4 +20,47 @@ public class Browsers {
 		}
 	}
 	
+	
+	//Elementos escrever
+	
+           	public void usuario(String texto, By elemento) {
+
+		driver.findElement(elemento).sendKeys(texto);
+	}
+
+	public void senha(String texto, By elemento) {
+
+		driver.findElement(elemento).sendKeys(texto);
+	}
+	public void nome(String texto, By elemento) {
+		
+		driver.findElement(elemento).sendKeys(texto);
+        
+	}public void cpf(String texto, By elemento) {
+		
+		driver.findElement(elemento).sendKeys(texto);
+        
+	}public void sexo(String texto, By elemento) {
+		
+		driver.findElement(elemento).sendKeys(texto);
+        
+	}public void admissao(String texto, By elemento) {
+		
+		driver.findElement(elemento).sendKeys(texto);
+        
+	}public void cargo(String texto, By elemento) {
+		
+		driver.findElement(elemento).sendKeys(texto);
+        
+	}public void salario(String texto, By elemento) {
+		
+		driver.findElement(elemento).sendKeys(texto);
+        
+	}public void tpDeContratacao(String texto, By elemento) {
+		
+		driver.findElement(elemento).sendKeys(texto);
+        
+	}
+  
+	
 }
