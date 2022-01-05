@@ -15,6 +15,5 @@ public class Metodos extends Browsers {
 			System.err.println("-----causa do erro------" + e.getMessage());
 		}
     
-	}
 }
 
