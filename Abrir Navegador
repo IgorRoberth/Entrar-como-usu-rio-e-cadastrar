@@ -1,0 +1,23 @@
+
+
+protected static WebDriver driver;
+
+	public void abrirNavegador(String site) {
+
+		try {
+			System.setProperty("webdriver.chrome.driver", "C:\\Driver\\chromedriver.exe");
+			driver = new ChromeDriver();
+			driver.get(site);
+			driver.manage().window().maximize();
+
+		} catch (Exception e) {
+			System.err.println("-----erro ao abrir navegador-----" + e.getMessage());
+			System.err.println("-----causa do erro-----" + e.getMessage());
+		}
+	}
+
+	public void Pesq(String texto, By elemento) {
+
+driver.findElement(elemento).sendKeys(texto);
+	}
+}
