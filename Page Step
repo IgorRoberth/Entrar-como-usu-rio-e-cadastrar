@@ -3,7 +3,7 @@ Realizando cadastro e logando como usuário para cadastrar e excluir funcionári
 
 public class ExemploTeste {
 
-//Page Gerkins para realizar os comando no meu WebDriver junto dos elementos e  meotodos  que estão nas outras pages
+//Page Step
 
 	Browsers browsers = new Browsers();
 	HomePage home = new HomePage();
